@@ -17,7 +17,7 @@ pip install "numpy>1.26,<2" "pandas>=2.2.3" "open3d>0.16" scikit-learn tqdm "pil
 GaaP algorithm is our first algorithm that leverage Dynamic 3DGS for training. Please follow their repo [here](https://github.com/JonathonLuiten/Dynamic3DGaussians) to setup the environment.
 
 ### Directly Point Cloud (DPC)
-For directly using point cloud to train, We use the Pytorch3D library for training. Please install the Pytorch3D [here](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md).
+For directly using point cloud to train, We use the Pytorch3D library for training. Please install the Pytorch3D==0.7.8 [here](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md).
 
 ## Run
 Firstly, use Ground-Truth point cloud to render the images use for training.

@@ -2,7 +2,8 @@
 This is the source code for the paper: Joint Learning of Point Clouds and Motion Vectors for Volumetric Video: A New Paradigm and Its Downstream Applications.
 
 ## Dataset
-We use the [8i dataset](https://plenodb.jpeg.org/pc/8ilabs) amd [MMsys dataset](https://dl.acm.org/doi/abs/10.1145/3587819.3592546)
+We use the two dynamic point clouds dataset: [8i dataset](https://plenodb.jpeg.org/pc/8ilabs) amd [MMsys dataset](https://dl.acm.org/doi/abs/10.1145/3587819.3592546)
+After Downloaded the dataset, run dataloader.py to generate the 2D images for 3D point clouds.
 
 ## Environment
 ```Bash
@@ -27,13 +28,13 @@ Finally, run convert2ply.py convert the npz files (params.npz) to point clouds.
 
 GaaP:
 ```Bash
-python gaap/render_gt.py
+python gaap/dataloader.py
 python gaap/train.py
 ```
 
 DPC:
 ```Bash
-python dpc/render_gt.py
+python dpc/dataloader.py
 python dpc/train.py
 ```
 

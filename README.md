@@ -21,22 +21,7 @@ GaaP algorithm is our first algorithm that leverage Dynamic 3DGS for training. P
 For directly using point cloud to train, We use the Pytorch3D library for training. Please install the Pytorch3D==0.7.8 [here](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md).
 
 ## Run
-Firstly, use Ground-Truth point cloud to render the images use for training.
-Secondly, make sure your folder have a group of point cloud frames and its correspond train_meta.json which list the camera parameter using for training.
-Thirdly, train your model and get the result. The result will be store as a npz file.
-Finally, run convert2ply.py convert the npz files (params.npz) to point clouds. 
-
-GaaP:
-```Bash
-python gaap/dataloader.py
-python gaap/train.py
-```
-
-DPC:
-```Bash
-python dpc/dataloader.py
-python dpc/train.py
-```
+Please read the specific readme in specific folders.
 
 ## Pre-trained Group of Frames (GoFs)
 We offer some pre-trained point cloud GoFs after training in pre-trained folder.
